@@ -23,6 +23,7 @@ basic.forever(function () {
             vote += 1
         }
         if (vote == 100) {
+            music.play(music.builtinPlayableSoundEffect(soundExpression.mysterious), music.PlaybackMode.UntilDone)
             basic.showString("" + (vote))
             break;
         }
